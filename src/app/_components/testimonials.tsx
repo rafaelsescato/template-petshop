@@ -1,10 +1,9 @@
 "use client"
 
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from "lucide-react"
+import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock, UsersIcon } from "lucide-react"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
 import Image from "next/image"
-import tutor1 from "../../../public/image/tutor1.png"
 
 const testimonials = [
 	{
@@ -12,20 +11,17 @@ const testimonials = [
 			"Desde que comecei a levar a Luna para banho e tosa aqui, ela nunca esteve tão feliz! O atendimento é impecável, os profissionais são super cuidadosos e sempre deixam minha peluda linda e cheirosa. Recomendo de olhos fechados!",
 		author: "Franco Souza",
 		role: "Tutor",
-		image: tutor1,
 	},
 	{
 		content:
 			"O serviço de hotel para pets foi uma experiência incrível! Precisei viajar e fiquei tranquilo sabendo que o Thor estava sendo bem cuidado. Recebi fotos e atualizações diárias, e ele voltou para casa super feliz! Sem dúvida, o melhor petshop da região.",
 		author: "Rafael Oliveira",
 		role: "Tutor",
-		image: tutor1,
 	},
 	{
 		content: "Meus gatos nunca gostaram de sair de casa, mas o atendimento nesse petshop fez toda a diferença. A equipe é muito paciente e cuidadosa, e o serviço de banho especializado para felinos foi maravilhoso! Agora sei onde confiar o cuidado deles.",
 		author: "Camilo Fernandes",
 		role: "Tutor",
-		image: tutor1,
 	},
 ]
 
@@ -58,13 +54,7 @@ export default function Testimonials() {
 									<article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col overflow-hidden">
 										<div className="flex flex-col items-center text-center space-y-4">
 											<div className="relative w-24 h-24">
-												<Image
-													src={item.image}
-													alt={item.author}
-													fill
-													sizes="96px"
-													className="object-cover rounded-full"
-												/>
+												<UsersIcon className="bg-gray-400 w-full h-full px-4 py-4 rounded-full" />
 											</div>
 											<p className="text-gray-200">{item.content}</p>
 											<div>
