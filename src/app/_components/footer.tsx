@@ -50,7 +50,10 @@ export default function Footer() {
 						<h3 className="text-2xl font-semibold mb-2">Pet Shop Dev</h3>
 						<p className="mb-4">Cuidando do seu melhor amigo com amor e dedicação.</p>
 						<a
-							href="#"
+							data-aos="fade-up"
+							data-aos-delay="500"
+							target='_blank'
+							href={`https://wa.me/999999999999?text=Olá vim pelo site e gostaria de mais informações.`}
 							className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
 						>
 							<WhatsappLogo className="w-5 h-5" />
