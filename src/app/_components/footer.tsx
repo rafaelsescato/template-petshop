@@ -72,9 +72,34 @@ export default function Footer() {
 					<div>
 						<h3 className="text-2xl font-semibold mb-2">Redes Sociais</h3>
 						<div className="flex gap-4">
-							<FacebookLogo className="w-8 h-8" />
-							<InstagramLogo className="w-8 h-8" />
-							<YoutubeLogo className="w-8 h-8" />
+							<a
+								data-aos="fade-up"
+								data-aos-delay="500"
+								target='_blank'
+								href="https://facebook.com"
+								className="hover:bg-blue-500 px-2 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+							>
+								<FacebookLogo className="w-10 h-10" />
+							</a>
+							<a
+								data-aos="fade-up"
+								data-aos-delay="500"
+								target='_blank'
+								href="https://instagram.com"
+								className="hover:bg-pink-700 px-2 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+							>
+								<InstagramLogo className="w-10 h-10" />
+							</a>
+							<a
+								data-aos="fade-up"
+								data-aos-delay="500"
+								target='_blank'
+								href="https://youtube.com"
+								className="hover:bg-red-800 px-2 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+							>
+								<YoutubeLogo className="w-10 h-10" />
+							</a>
+
 
 						</div>
 					</div>
