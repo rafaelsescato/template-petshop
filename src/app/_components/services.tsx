@@ -91,13 +91,15 @@ export default function Services() {
 											</div>
 
 											<a
-												href="#"
-												className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300 text-nowrap"
+												data-aos="fade-up"
+												data-aos-delay="500"
+												target='_blank'
+												href={`https://wa.me/999999999999?text=${encodeURIComponent(`Olá vim pelo site e gostaria de mais informações sobre ${item.title}.`)}`}
+												className="flex items-center justify-center gap-2 hover:bg-green-500 px-4 py-1 rounded-md duration-300 font-semibold text-nowrap"
 											>
-												<WhatsappLogo className="w-4 h-4" />
+												<WhatsappLogo className="w-5 h-5" />
 												Entrar em contato
 											</a>
-
 										</div>
 
 									</article>
