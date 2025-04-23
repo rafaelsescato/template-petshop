@@ -13,7 +13,7 @@ export default function Hero() {
 					fill
 					priority
 					sizes="100vw"
-					className="object-cover opacity-60 lg:hidden"
+					className="object-contain opacity-60 lg:hidden"
 				/>
 				<div className="absolute inset-0 bg-black opacity-40 md:hidden"></div>
 			</div>
@@ -50,16 +50,6 @@ export default function Hero() {
 								</b>
 								de desconto na primeira compra.
 							</p>
-							<div className="flex mt-4">
-								<div className="w-32 hidden lg:block">
-									<Image
-										src={catImage}
-										alt="Foto do Gato"
-										quality={100}
-										className="object-fill"
-									/>
-								</div>
-							</div>
 						</div>
 					</div>
 
